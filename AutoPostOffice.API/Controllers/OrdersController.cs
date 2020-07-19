@@ -155,14 +155,20 @@ namespace AutoPostOffice.API.Controllers
                 }
 
                 var order = orderRepository.GetOrder(orderNumber);
-                if (order == null)
+                if (order == null || model == null)
                 {
                     return StatusCode(StatusCodes.Status404NotFound);
                 }
 
-                if (model == null)
+                if (order.Status == OrderStatus.Cancelled)
                 {
-                    return StatusCode(StatusCodes.Status404NotFound);
+                    var response = new HttpResponseMessage()
+                    {
+                        StatusCode = (HttpStatusCode)403,
+                        ReasonPhrase = "You are trying to alter cancelled Order."
+                    };
+
+                    return StatusCode(StatusCodes.Status403Forbidden, response);
                 }
 
                 var alteredOrder = mapper.Map<Order>(model);
