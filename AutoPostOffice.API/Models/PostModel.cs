@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace AutoPostOffice.API.Models
+﻿namespace AutoPostOffice.API.Models
 {
     public class PostModel
     {

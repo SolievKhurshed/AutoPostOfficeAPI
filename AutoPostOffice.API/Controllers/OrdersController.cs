@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Reflection.Metadata.Ecma335;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
 using AutoPostOffice.API.Data.Entities;
 using AutoPostOffice.API.Data.Repositories;
 using AutoPostOffice.API.Models;
 using LoggerService;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Net;
+using System.Net.Http;
 
 namespace AutoPostOffice.API.Controllers
 {

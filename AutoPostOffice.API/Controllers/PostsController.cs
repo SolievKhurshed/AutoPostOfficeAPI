@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AutoMapper;
-using AutoPostOffice.API.Data.Entities;
+﻿using AutoMapper;
 using AutoPostOffice.API.Data.Repositories;
 using AutoPostOffice.API.Models;
 using LoggerService;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
 
 namespace AutoPostOffice.API.Controllers
 {
