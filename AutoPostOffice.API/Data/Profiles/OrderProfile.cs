@@ -1,12 +1,6 @@
 ﻿using AutoMapper;
 using AutoPostOffice.API.Data.Entities;
-using AutoPostOffice.API.Data.Repositories;
 using AutoPostOffice.API.Models;
-using Microsoft.VisualBasic;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace AutoPostOffice.API.Data.Profiles
 {
